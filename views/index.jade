@@ -1,0 +1,29 @@
+doctype html
+head
+  meta(charset="utf-8")
+  title Parrotify
+  link(href="/css/style.css" rel="stylesheet")
+body
+  section
+    h1 Parrotify
+    form(action="parrotify.gif" method="post" enctype="multipart/form-data").data
+      .field
+        label.forField.upload Upload your&nbsp;&nbsp;&nbsp;&nbsp;<br>png -->
+        input(type="file" id="file" name="file").file-upload
+        label(for="file") Select file
+      .hidden.afterUpload
+        .field
+          label.forField X
+          input(type="number" name="offsetX" placeholder="Offset X" autocomplete="off")
+        .field
+          label.forField Y
+          input(type="number" name="offsetY" placeholder="Offset Y" autocomplete="off")
+        .field
+          label.forField S
+          input(type="number" name="scaleP" placeholder="Scale" autocomplete="off")
+        .field
+          label.forField D
+          input(type="number" name="delay" placeholder="Delay" autocomplete="off")
+        input(type="submit" value="Download parrot!" accept="image/jpeg, image/png")
+    img.output
+  script(src="/js/parrotify.min.js")

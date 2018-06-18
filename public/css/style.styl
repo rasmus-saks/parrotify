@@ -1,0 +1,74 @@
+@import 'nib'
+
+*
+  margin 0
+  padding 0
+  box-sizing border-box
+  font-family sans-serif
+
+h1
+  font-weight 700
+  font-size 40px
+
+section
+  margin 0 auto
+  padding 64px 0
+  max-width 320px
+  text-align center
+  .afterUpload
+    transition all 0.2s 0.1s
+    &.hidden
+      opacity 0
+      visibility hidden
+  form
+    padding 32px 0
+  input, .file-upload + label
+    font-size 20px
+    background none
+    line-height 48px
+    height 48px
+    padding 0 8px
+    margin-bottom 8px
+    border 1px solid rgba(0,0,0,0.1)
+    width 100%
+  .field
+    position relative
+    label.forField
+      position absolute
+      left -19px
+      top 15px
+      color #666
+      font-size 18px
+      font-weight 300
+      &.upload
+        font-size 14px
+        top 2px
+        left -100px
+        text-align right
+  .file-upload
+    width 0.1px
+    height 0.1px
+    opacity 0
+    overflow hidden
+    position absolute
+    z-index -1
+  .file-upload + label, input[type="submit"]
+    display inline-block
+    cursor pointer
+    border-radius 100px
+    color #333
+    background-color #fff
+    transition all 0.1s
+  .file-upload:focus + label,
+  .file-upload + label:hover
+    background-color #fafafa
+  input[type="submit"]
+    box-shadow 0px 0px 6px rgba(234, 40, 41, 0.7)
+    outline none
+    color #fff
+    background-color #ea2829
+    margin-top 32px
+    &:hover,
+    &:active
+      color #fff
+      background-color #ff4443
