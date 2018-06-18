@@ -3,16 +3,7 @@
   "version": "1.0.0",
   "description": "Parrotify yourself!",
   "main": "app.js",
-  "repository": {
-    "type": "git",
-    "url": "http://git.waystone.io/rasmussaks/parrotify.git"
-  },
   "devDependencies": {},
-  "author": "Waystone OÜ <hello@waystone.io>",
-  "scripts": {
-    "start": "nodemon bin/www.js"
-  },
-  "license": "SEE LICENSE IN LICENSE.md",
   "dependencies": {
     "body-parser": "^1.15.0",
     "browserify-middleware": "^7.0.0",
